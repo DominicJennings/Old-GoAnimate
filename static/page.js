@@ -129,7 +129,7 @@ module.exports = function (req, res, url) {
 					themeId: "business",
 					tlang: "en_US",
 					presaveId: presave,
-					goteam_draft_only: 1,
+					goteam_draft_only: 0,
 					isWide: 1,
 					collab: 0,
 					nextUrl: "/html/dashboard/videos.html",
