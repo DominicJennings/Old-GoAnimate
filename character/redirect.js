@@ -19,12 +19,12 @@ module.exports = function (req, res, url) {
 	var redirect;
 	switch (mode) {
 		case "/copy": {
-			redirect = `/go/character/creator?themeId=${theme}&original_asset_id=${id.substr(1)}`;
+			redirect = `/cc?themeId=${theme}&original_asset_id=${id.substr(1)}`;
 			break;
 		}
 		default: {
 			var type = url.query.type || defaultTypes[theme] || "";
-			redirect = `/go/character/creator?themeId=${theme}&bs=${type}`;
+			redirect = `/cc?themeId=${theme}&bs=${type}`;
 			break;
 		}
 	}
